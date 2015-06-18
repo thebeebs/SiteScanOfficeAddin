@@ -44,6 +44,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="OfficeApp2Manifest\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ff57f860-3178-4308-ab3a-6f9c1d4145a7}</SharePointProjectItemId>
     </None>
@@ -52,13 +53,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OfficeApp2Web\OfficeApp2Web.csproj">
-      <Project>{911F2296-DF10-4B44-AD71-5885D80DC0BC}</Project>
-      <Name>OfficeApp2Web</Name>
+    <ProjectReference Include="..\SiteScanApi\SiteScanApi.csproj">
+      <Project>{034F5ABB-ADAB-4EF8-BBAC-0E27215EED60}</Project>
+      <Name>SiteScanApi</Name>
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <OutputItemType>SharePointWebProjectOutput</OutputItemType>
-      <RoleName>OfficeApp2Web</RoleName>
+      <RoleName>SiteScanApi</RoleName>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

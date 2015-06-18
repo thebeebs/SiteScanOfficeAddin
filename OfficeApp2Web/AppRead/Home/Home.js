@@ -4,7 +4,7 @@
 
 var app2 = angular.module('StarterApp', ['ngMaterial']);
 
-app2.controller('AppCtrl', function($scope) {
+app2.controller('AppCtrl', function($scope, $http) {
     
         $scope.data = {
             group1: 'microsoft.com',
@@ -15,12 +15,20 @@ app2.controller('AppCtrl', function($scope) {
         ];
         $scope.processing = false;
         $scope.result = false;
-        $scope.showConfirm = function(ev){
+        $scope.showConfirm = function (ev) {
+            console.log("heelo");
             $scope.processing = true;
-            $timeout(function () {
-                $scope.processing = false;
-                $scope.result = true;
-            }, 3000);
+            //https://sitescanapi.azurewebsites.net
+            $http.get('https://sitescanapi.azurewebsites.net/api/sites/?site=beebs.co.uk').
+                                success(function (data) {
+                                    $scope.processing = false;
+                                    console.log("Got It");
+                                    console.log(data);
+                                }).
+                               error(function (data) {
+                                   console.log("Yikes");
+                                   console.log(data);
+                               });
         }
         
 });

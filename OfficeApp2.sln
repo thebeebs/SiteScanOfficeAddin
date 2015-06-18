@@ -5,7 +5,18 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeApp2", "OfficeApp2\OfficeApp2.csproj", "{71977969-D098-47C2-B8A9-6FCA5A1E3AA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeApp2Web", "OfficeApp2Web\OfficeApp2Web.csproj", "{911F2296-DF10-4B44-AD71-5885D80DC0BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteScanApi", "SiteScanApi\SiteScanApi.csproj", "{034F5ABB-ADAB-4EF8-BBAC-0E27215EED60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{81A6D64C-2874-482F-BAF4-2C7599E36E77}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{31FCE827-C00E-4CE8-BA67-6888C26BDD97}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\SiteScanApi-WAWS-dev.json = PublishScripts\Configurations\SiteScanApi-WAWS-dev.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +30,15 @@ Global
 		{71977969-D098-47C2-B8A9-6FCA5A1E3AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71977969-D098-47C2-B8A9-6FCA5A1E3AA3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{71977969-D098-47C2-B8A9-6FCA5A1E3AA3}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{911F2296-DF10-4B44-AD71-5885D80DC0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{911F2296-DF10-4B44-AD71-5885D80DC0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{911F2296-DF10-4B44-AD71-5885D80DC0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{911F2296-DF10-4B44-AD71-5885D80DC0BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{034F5ABB-ADAB-4EF8-BBAC-0E27215EED60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034F5ABB-ADAB-4EF8-BBAC-0E27215EED60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{034F5ABB-ADAB-4EF8-BBAC-0E27215EED60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{034F5ABB-ADAB-4EF8-BBAC-0E27215EED60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31FCE827-C00E-4CE8-BA67-6888C26BDD97} = {81A6D64C-2874-482F-BAF4-2C7599E36E77}
 	EndGlobalSection
 EndGlobal

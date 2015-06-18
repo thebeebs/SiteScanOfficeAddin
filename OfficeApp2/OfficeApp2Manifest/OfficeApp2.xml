@@ -2,11 +2,11 @@
 <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
   <Id>6a1abbf4-1ae4-4144-8b93-86e6581fb9f9</Id>
-  <Version>1.0.0.1</Version>
+  <Version>1.0.0.2</Version>
   <ProviderName>[Provider name]</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="SiteScan" />
-  <Description DefaultValue="Performas a SiteScan of the developer that is Emailing me."/>
+  <Description DefaultValue="Looks for Websites in the document body that look like URLs and then allows you to Scan them "/>
   <Hosts>
     <Host Name="Mailbox" />
   </Hosts>
